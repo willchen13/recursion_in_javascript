@@ -16,6 +16,11 @@
 // sumArray([1, 2, 3, 4, 5]) => 15
 
 
-var sumArray = function(arr) {
-  // Your code here
-};
+var sumArray=function(arr){
+  let poppedValue=arr.pop();
+  if(arr.length===0){
+    return poppedValue;
+  }else{
+    return poppedValue+sumArray(arr);
+  }
+}

@@ -16,7 +16,11 @@
 // nthFibonacci(4); // => 3
 // etc...
 
+//1,1,2,3,5
 var nthFibonacci = function(n) {
-  // Your code here
-};
-
+  if(n<=2){
+    return 1;
+  }else{
+    return nthFibonacci(n-1)+nthFibonacci(n-2);
+  }
+}
